@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { 
+    background: linear-gradient(135deg, #3160c5, #1e293b); 
+    min-height: 100vh; 
+    padding: 30px; 
+}
+
+.container { max-width: 1000px; margin: auto; }
+
+.card { 
+    background: rgba(255,255,255,0.08); 
+    backdrop-filter: blur(15px); 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 8px 30px rgba(0,0,0,.4); 
+    margin-bottom: 30px; 
+}
+
+h1, h2 { color: white; margin-bottom: 20px; text-align: center; }
+
+form { display: flex; flex-direction: column; gap: 15px; }
+
+.grupo label { color: white; display: block; margin-bottom: 5px; font-weight: 500; }
+
+.grupo input, .grupo select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none; /* Se oculta por defecto */
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#btnGuardar { background: #00008b; }
+#btnGuardar:hover { background: #0000cd; }
+
+#btnExportar { background: #2563eb; }
+#btnExportar:hover { background: #1d4ed8; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; background: white; border-radius: 10px; overflow: hidden; }
+
+th { background: #0f172a; color: white; padding: 12px; }
+
+td { padding: 12px; border-bottom: 1px solid #ddd; text-align: center; color: #333; }
+
+.eliminar { background: #e74c3c; padding: 6px 12px; border-radius: 5px; margin: 0; }
+.eliminar:hover { background: #c0392b; }
